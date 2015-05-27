@@ -1,0 +1,85 @@
+Script started on Fri Oct 24 17:48:41 2014
+[1m[7m%[27m[1m[0m                                                                                                                                               ]2;ctizzle@Colleens-MacBook-Air: ~/Documents/DFARunner]1;..nts/DFARunner[0m[27m[24m[J[01;32m➜ [01;32m [36mDFARunner [01;34m[01;34m [00m[K[?1h=ppy
+[0mpydoc              pydoc2.7           python             python2.6          python2.7          pythonw            pythonw2.7       
+[Jpydoc2.6           [Jpyenv_prompt_info  [Jpython-config      [Jpython2.6-config   [Jpython2.7-config   [Jpythonw2.6         [J                 [A[A[0m[27m[24m[14Cpy[Kthon dfaRunner.py[1m [0m[0m [?1l>
+[J]2;python dfaRunner.py]1;pythonWelcome to Colleen's DFA Runner Program
+
+
+This program will determine whether a string you input
+will be accepted by the DFA you specify. Please follow the
+directions below.
+
+
+
+How many elements are in the language? (sigma): 2
+Please enter an element in the language: 0
+Please enter an element in the language: 1
+
+
+
+Enter the number of states: 4
+Please enter the designation for each state: q0
+Please enter the designation for each state: q1
+Please enter the designation for each state: q2
+Please enter the designation for each state: q3
+
+
+
+
+
+
+Please enter the start state: q0
+
+
+
+Enter the number of accepting states: 1
+Please enter each accepting state: q3
+
+
+Please enter the transition function for each state (i.e. q(n): a-q): 
+The state and the transition on an element are provided. Enter only the new state: 
+
+
+At state: q0 :  on 0 : q1
+At state: q0 :  on 1 : q0
+At state: q1 :  on 0 : q2
+At state: q1 :  on 1 : q0
+At state: q2 :  on 0 : q2
+At state: q2 :  on 1 : q3
+At state: q3 :  on 0 : q3
+At state: q3 :  on 1 : q3
+The DFA you entered is defined as: 
+
+Sigma: 
+['0', '1']
+States: 
+['q0', 'q1', 'q2', 'q3']
+Start state: 
+q0
+Delta function: 
+[]
+F: 
+['q3']
+
+
+
+
+
+ Your DFA looks like
+
+ 
+q1	{'1': 'q0', '0': 'q2'}
+q0	{'1': 'q0', '0': 'q1'}
+q3	{'1': 'q3', '0': 'q3'}
+q2	{'1': 'q3', '0': 'q2'}
+
+Please enter a string to check: 
+011
+
+The final state is: q0 and the accepting state(s) are: ['q3']
+
+
+String rejected
+[1m[7m%[27m[1m[0m                                                                                                                                               ]2;ctizzle@Colleens-MacBook-Air: ~/Documents/DFARunner]1;..nts/DFARunner[0m[27m[24m[J[01;32m➜ [01;32m [36mDFARunner [01;34m[01;34m [00m[K[?1h=eexit[?1l>
+]2;exit]1;exit
+Script done on Fri Oct 24 17:57:30 2014
